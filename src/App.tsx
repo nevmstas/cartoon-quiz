@@ -4,6 +4,8 @@ import QuestionCard from  './Components/QuestionCard'
 import { fetchQuizQuestions } from './API'
 import { QuestionState, Difficulty } from './API'
 
+import { GlobalStyle, Wrapper } from './App.styles'
+
 
 export type AnswerObject = {
   question: string
@@ -60,10 +62,13 @@ const App = () =>{
   }
   
   useEffect(() => {
-    number === TOTAL_QUESTIONS - 1 && setGameOver(true)
+    number === TOTAL_QUESTIONS && setGameOver(true)
   }, [number])
 
   return (
+    <>
+    <GlobalStyle />
+    <Wrapper>
     <div>
       <h1> Cartoon quiz</h1>
       {/* <select>
@@ -90,10 +95,12 @@ const App = () =>{
       />
       )}
       {!gameOver && !loading && userAnswers.length === number + 1 && number !== TOTAL_QUESTIONS - 1? (
-        <button className="next" onClick={nextQuestion}>Next</button>
+        <button className="next" onClick={nextQuestion}>Next &#8658;</button>
       ): null}
       
     </div>
+    </Wrapper>
+    </>
   );
 }
 
