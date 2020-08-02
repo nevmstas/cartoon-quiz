@@ -40,7 +40,7 @@ const App = () => {
     const correctAnswer = questions[number].correct_answer;
     const correct = correctAnswer === e.currentTarget.innerText;
 
-    if (correct) setScore((prev) => prev + 1);
+    if (correct) setScore((prev: any) => prev + 1);
 
     const answerObject: AnswerObject = {
       question: questions[number].question,
@@ -48,7 +48,7 @@ const App = () => {
       correct: correct,
       correctAnswer: correctAnswer,
     };
-    setUserAnswers((prev) => [...prev, answerObject]);
+    setUserAnswers((prev: any) => [...prev, answerObject]);
   };
 
   const nextQuestion = () => {
@@ -70,11 +70,6 @@ const App = () => {
       <Wrapper>
         <div>
           <h1> Cartoon quiz</h1>
-          {/* <select>
-      {Object.keys(Difficulty).map(key => (
-      <option value={key}>{Difficulty[key]}</option>
-        ))}
-      </select> */}
 
           {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
             <button className="start" onClick={startTrivia}>
@@ -84,8 +79,8 @@ const App = () => {
 
           {!gameOver ? <p className="score">Score: {score}</p> : null}
 
-          {loading ? <p>Loading questions</p> : null}
-          {!loading && !gameOver && (
+          {loading ? <p>Loading questions...</p> : null}
+          {!loading && !gameOver && number !== TOTAL_QUESTIONS && (
             <QuestionCard
               questionNumber={number + 1}
               totalQuestions={TOTAL_QUESTIONS}
