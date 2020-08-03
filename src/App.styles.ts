@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     *{
         box-sizing:border-box;
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-family: "Comic Sans MS", "Comic Sans";
     }
 `;
 
@@ -128,4 +128,7 @@ export const ButtonWrapper = styled.div<ButtonProps>`
         correct ? "black" : !correct && userClicked ? "white" : "grey"};
     }
   }
+`;
+export const SelectContainer = styled.div`
+  margin: 30px;
 `;

@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import QuestionCard from "./Components/QuestionCard";
+import StartForm from "./Components/StartForm";
 import { fetchQuizQuestions } from "./API";
 import { QuestionState, Difficulty } from "./API";
 
-import { GlobalStyle, Wrapper } from "./App.styles";
+import { GlobalStyle, Wrapper, SelectContainer } from "./App.styles";
 
 export type AnswerObject = {
   question: string;
@@ -13,7 +14,7 @@ export type AnswerObject = {
   correctAnswer: string;
 };
 
-const TOTAL_QUESTIONS = 30;
+const TOTAL_QUESTIONS = 10;
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -23,12 +24,12 @@ const App = () => {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(true);
 
-  const startTrivia = async () => {
+  const startTrivia = async (difficulty: Difficulty) => {
     setLoading(true);
     setGameOver(false);
     const newQuestions = await fetchQuizQuestions(
       TOTAL_QUESTIONS,
-      Difficulty.MEDIUM
+      difficulty as Difficulty
     );
     setQuestions(newQuestions);
     setScore(0);
@@ -70,12 +71,10 @@ const App = () => {
       <Wrapper>
         <div>
           <h1> Cartoon quiz</h1>
-
-          {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
-            <button className="start" onClick={startTrivia}>
-              start
-            </button>
-          ) : null}
+          <StartForm
+            condition={gameOver || userAnswers.length === TOTAL_QUESTIONS}
+            startTrivia={startTrivia}
+          />
 
           {!gameOver ? <p className="score">Score: {score}</p> : null}
 
