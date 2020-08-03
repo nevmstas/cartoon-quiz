@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/cartoon-quiz/static/css/main.34de6062.chunk.css",
-    "main.js": "/cartoon-quiz/static/js/main.58b13819.chunk.js",
-    "main.js.map": "/cartoon-quiz/static/js/main.58b13819.chunk.js.map",
+    "main.js": "/cartoon-quiz/static/js/main.b0a00152.chunk.js",
+    "main.js.map": "/cartoon-quiz/static/js/main.b0a00152.chunk.js.map",
     "runtime-main.js": "/cartoon-quiz/static/js/runtime-main.532d3307.js",
     "runtime-main.js.map": "/cartoon-quiz/static/js/runtime-main.532d3307.js.map",
-    "static/js/2.265ac54a.chunk.js": "/cartoon-quiz/static/js/2.265ac54a.chunk.js",
-    "static/js/2.265ac54a.chunk.js.map": "/cartoon-quiz/static/js/2.265ac54a.chunk.js.map",
+    "static/js/2.02dda43d.chunk.js": "/cartoon-quiz/static/js/2.02dda43d.chunk.js",
+    "static/js/2.02dda43d.chunk.js.map": "/cartoon-quiz/static/js/2.02dda43d.chunk.js.map",
     "index.html": "/cartoon-quiz/index.html",
-    "precache-manifest.beb2312ca83a649ac0423cc2a550133b.js": "/cartoon-quiz/precache-manifest.beb2312ca83a649ac0423cc2a550133b.js",
+    "precache-manifest.09f6648f1bab8401d7138b6a845862ac.js": "/cartoon-quiz/precache-manifest.09f6648f1bab8401d7138b6a845862ac.js",
     "service-worker.js": "/cartoon-quiz/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/cartoon-quiz/static/css/main.34de6062.chunk.css.map",
-    "static/js/2.265ac54a.chunk.js.LICENSE.txt": "/cartoon-quiz/static/js/2.265ac54a.chunk.js.LICENSE.txt",
+    "static/js/2.02dda43d.chunk.js.LICENSE.txt": "/cartoon-quiz/static/js/2.02dda43d.chunk.js.LICENSE.txt",
     "static/media/bg2.png": "/cartoon-quiz/static/media/bg2.ec5b4261.png"
   },
   "entrypoints": [
     "static/js/runtime-main.532d3307.js",
-    "static/js/2.265ac54a.chunk.js",
+    "static/js/2.02dda43d.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.58b13819.chunk.js"
+    "static/js/main.b0a00152.chunk.js"
   ]
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "602b8a68fa8d004f2409c360f4660159",
+    "revision": "7cb130a633f3c4bbd444b516d4f4f2f7",
     "url": "/cartoon-quiz/index.html"
   },
   {
-    "revision": "535301cb71860adbbd46",
+    "revision": "fafc7c866bbda805273f",
     "url": "/cartoon-quiz/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "891f5df32366bb03d936",
-    "url": "/cartoon-quiz/static/js/2.265ac54a.chunk.js"
+    "revision": "2894698ffcf48a74c3f8",
+    "url": "/cartoon-quiz/static/js/2.02dda43d.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/cartoon-quiz/static/js/2.265ac54a.chunk.js.LICENSE.txt"
+    "revision": "77e7f328dacc981fca681ee4ae94d669",
+    "url": "/cartoon-quiz/static/js/2.02dda43d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "535301cb71860adbbd46",
-    "url": "/cartoon-quiz/static/js/main.58b13819.chunk.js"
+    "revision": "fafc7c866bbda805273f",
+    "url": "/cartoon-quiz/static/js/main.b0a00152.chunk.js"
   },
   {
     "revision": "2ae1c074eae952b67fff",
